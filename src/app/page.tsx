@@ -1,7 +1,12 @@
-import Image from 'next/image'
+import { Flex, Text, Button, Container } from "@radix-ui/themes";
 
 export default function Home() {
   return (
-    <main>Hello</main>
-  )
+    <Container size="2">
+      <Flex direction="column" gap="2">
+        <Text>Hello from Radix Themes </Text>
+        <Button>Let’s go</Button>
+      </Flex>
+    </Container>
+  );
 }

@@ -1,7 +1,14 @@
-import { Button } from "@radix-ui/themes";
 import fs from "fs";
 import { compileMDX } from "next-mdx-remote/rsc";
 import path from "path";
+
+interface FrontmatterAttr {
+  title: string;
+  date: string;
+  summary: string;
+  ogImage?: string;
+  tags?: string[];
+}
 
 const contentDir = path.join(process.cwd(), "src/app/content");
 
@@ -22,26 +29,8 @@ export const getPostBySlug = async (slug: string) => {
 
   const fileContent = fs.readFileSync(filePath);
 
-  return await compileMDX({
+  return await compileMDX<FrontmatterAttr>({
     source: fileContent,
     options: { parseFrontmatter: true },
   });
-};
-
-export const loadPosts = async () => {
-  const contentSlugArray = fs.readdirSync(contentDir);
-  const filePath = path.join(contentDir, contentSlugArray[0]);
-
-  const fileContent = fs.readFileSync(filePath);
-
-  const { frontmatter, content } = await compileMDX({
-    source: fileContent,
-    components: {
-      h1: (props) => <h1 style={{ color: "tomato" }} {...props} />,
-      Button,
-    },
-    options: { parseFrontmatter: true },
-  });
-
-  return { frontmatter, content };
 };

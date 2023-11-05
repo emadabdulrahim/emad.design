@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { Theme } from "@radix-ui/themes";
+import { GeistSans, GeistMono } from "geist/font";
 import "@radix-ui/themes/styles.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import "./theme-config.css";
+import clsx from "clsx";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={clsx(GeistSans.variable, GeistMono.variable)}>
         <Theme>{children}</Theme>
       </body>
     </html>

@@ -3,7 +3,13 @@ import { ToggleThemeButton } from "./ToggleTheme";
 
 export function Footer() {
   return (
-    <Box style={{ borderTop: "1px solid var(--gray-5)" }} p="4">
+    <Box
+      style={{
+        borderTop: "1px solid var(--gray-5)",
+        fontFamily: "var(--font-geist-mono)",
+      }}
+      p="4"
+    >
       <Container size="2">
         <Flex justify={"between"}>
           <Text size="2" color="gray">

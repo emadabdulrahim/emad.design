@@ -1,19 +1,22 @@
-import { Flex, Text, Container, Link } from "@radix-ui/themes";
+import { Flex, Text, Container, Link, Heading } from "@radix-ui/themes";
 import styles from "./home.module.css";
 
 export default function Home() {
   return (
     <Container size="2" height="100%" className={styles.container} p="4">
-      <Flex direction="column" gap="5" justify={"center"} height="100%">
-        <Text
+      <Flex direction="column" gap="3" justify={"center"} height="100%">
+        <Heading
           size="4"
           color="gray"
           style={{ fontFamily: "var(--font-geist-mono)" }}
         >
-          Hello, I’m Emad Abdulrahim, but you can call me Moody — it’s not just
-          my disposition, it’s my nickname! I’m Design Engineer at{" "}
-          <Link href="//ashbyhq.com">Ashby</Link>, based in San Francisco,
-          designing and building quality user interfaces that look beauitful.
+          Hello
+        </Heading>
+
+        <Text size="4">
+          Emad 'Moody' Abdulrahim — Design Engineer based in beautiful San
+          Francisco. I’m currently crafting beautiful and thoughtful interfaces
+          at <Link href="//ashbyhq.com">Ashby.</Link>
         </Text>
       </Flex>
     </Container>

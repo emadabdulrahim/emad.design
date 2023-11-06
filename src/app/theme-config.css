@@ -4,10 +4,10 @@
   --em-font-family: var(--font-geist-sans);
 }
 
-:root.light {
+:root, .light, .light-theme {
   --color-page-background: var(--gray-2);
 }
 
-:root.dark {
+.dark, .dark-theme {
   --color-page-background: var(--gray-1);
 }

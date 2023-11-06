@@ -1,4 +1,13 @@
 .radix-themes {
   --default-font-family: var(--font-geist-sans);
   --code-font-family: var(--font-geist-mono);
+  --em-font-family: var(--font-geist-sans);
+}
+
+:root.light {
+  --color-page-background: var(--gray-2);
+}
+
+:root.dark {
+  --color-page-background: var(--gray-1);
 }

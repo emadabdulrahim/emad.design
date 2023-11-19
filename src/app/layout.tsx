@@ -10,8 +10,9 @@ import { Footer } from "@/components/Footer";
 import { ContainerProps } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: "Moody · Design Engineer",
-  description: "A Design Engineer based in beautiful San Francisco.",
+  title: "Project 75",
+  description:
+    "An initiative to honor all Palestinians who were victims since 1948.",
 };
 
 export default function RootLayout({

@@ -23,7 +23,7 @@ export default function Home() {
             Project 75 is an initiative to honor all Arabs, with initial focus
             on Palestinians, who were killed by Israelis. The project aims to
             document the personal stories of Palestinian suffering since the
-            Nakba—Catastrophe.
+            1948 Nakba—Catastrophe.
           </Text>
           <Text size="4">
             The stories of each Palestinian need to be honored and remembered.

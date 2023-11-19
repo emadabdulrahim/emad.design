@@ -11,7 +11,7 @@ export function Footer() {
       <Container size="2">
         <Flex justify={"center"}>
           <Text size="2">
-            🇵🇸 <Text color="gray">Oranament of the world.</Text>
+            🇵🇸 <Text color="gray">Ornament of the world.</Text>
           </Text>
         </Flex>
       </Container>

@@ -26,10 +26,11 @@ export default function Home() {
             1948 Nakba—Catastrophe.
           </Text>
           <Text size="4">
-            The stories of each Palestinian need to be honored and remembered.
-            This will be done through crowdsourcing, with a system in place to
-            verify and fact-check each story. Besides text, the stories will
-            include photos, videos, and audio recordings as available.
+            The stories of each Palestinian need to be told, shared, honored,
+            and remembered. This will be done through crowdsourcing, with a
+            system in place to verify and fact-check each story. Besides text,
+            the stories will include photos, videos, and audio recordings as
+            available.
           </Text>
           <Text size="4">
             The project will be open source, and will be available in both

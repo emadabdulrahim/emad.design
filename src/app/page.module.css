@@ -1,0 +1,15 @@
+.container > div {
+  height: 100%;
+}
+
+.logo {
+  --size: 96px;
+  align-self: center;
+  width: var(--size);
+  height: var(--size);
+  transform: translateX(10%)
+}
+
+.caption {
+  font-style: italic;
+}

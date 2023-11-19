@@ -9,10 +9,9 @@ export function Footer() {
       p="4"
     >
       <Container size="2">
-        <Flex justify={"center"}>
-          <Text size="2">
-            🇵🇸 <Text color="gray">Ornament of the world.</Text>
-          </Text>
+        <Flex gap="1" align={"center"} justify={"center"}>
+          <Text size="4">🇵🇸</Text>
+          <Text color="gray">Ornament of the world.</Text>
         </Flex>
       </Container>
     </Box>
